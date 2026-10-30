@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
   {
     role: 'ERP Developer',
     company: 'PEPA Enterprise',
-    duration: '2 months',
+    duration: 'Ongoing',
     responsibilities: [
       'Developed ERP modules',
       'Worked on database-driven applications',
