@@ -1,4 +1,4 @@
-import { Layout, Server, Database, Wrench, type LucideIcon } from 'lucide-react';
+import { Layout, Server, Database, Wrench, Code2, type LucideIcon } from 'lucide-react';
 import { skillCategories } from '@/data/skills';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
@@ -7,13 +7,15 @@ const iconMap: Record<string, LucideIcon> = {
   server: Server,
   database: Database,
   wrench: Wrench,
+  code: Code2,
 };
 
 const categoryGradients: Record<string, string> = {
-  Frontend: 'from-primary-600 to-accent-500',
-  Backend: 'from-secondary-500 to-primary-600',
-  Database: 'from-accent-600 to-accent-400',
-  Tools: 'from-primary-500 to-secondary-400',
+  'Frontend & UI': 'from-primary-600 to-accent-500',
+  'Backend & APIs': 'from-secondary-500 to-primary-600',
+  Languages: 'from-accent-500 to-primary-500',
+  'Databases & DevOps': 'from-accent-600 to-accent-400',
+  Specializations: 'from-primary-500 to-secondary-400',
 };
 
 export default function Skills() {
@@ -36,7 +38,7 @@ export default function Skills() {
           <div className="mt-4 w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full mx-auto" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => {
             const Icon = iconMap[category.icon] ?? Wrench;
             const gradient = categoryGradients[category.title] ?? 'from-primary-500 to-accent-500';
