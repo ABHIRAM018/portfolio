@@ -6,32 +6,34 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Frontend',
+    title: 'Frontend & UI',
     icon: 'layout',
-    skills: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Angular',
-      'Bootstrap',
-      'Tailwind CSS',
-    ],
+    skills: ['React.js', 'Angular', 'Bootstrap', 'Tailwind CSS', 'Responsive Web Design'],
   },
   {
-    title: 'Backend',
+    title: 'Backend & APIs',
     icon: 'server',
-    skills: ['Java', 'Python', 'Node.js', 'PHP', 'Flask', 'JDBC'],
+    skills: ['Node.js', 'Flask', 'RESTful APIs', 'JDBC'],
   },
   {
-    title: 'Database',
+    title: 'Languages',
+    icon: 'code',
+    skills: ['JavaScript (ES6+)', 'TypeScript', 'Python', 'Java', 'SQL', 'PHP', 'HTML5', 'CSS3'],
+  },
+  {
+    title: 'Databases & DevOps',
     icon: 'database',
-    skills: ['MySQL', 'SQLite', 'Firebase'],
+    skills: ['MySQL', 'SQLite', 'Firebase', 'Git', 'GitHub', 'Web hosting solutions'],
   },
   {
-    title: 'Tools',
+    title: 'Specializations',
     icon: 'wrench',
-    skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Canva'],
+    skills: [
+      'ERP Integration',
+      'Data Analysis Techniques',
+      'React Development',
+      'PHP Development',
+      'SQL Databases',
+    ],
   },
 ];

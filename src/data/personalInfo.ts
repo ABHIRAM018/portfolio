@@ -24,7 +24,7 @@ export const personalInfo: PersonalInfo = {
     'ERP Development',
     'Web Application Development',
   ],
-  resumeUrl: 'YOUR_RESUME_URL',
+  resumeUrl: '/Abhiram-Resume.pdf',
   profileImage: '/Polished_Corporate_Portrait_Outdoors.png',
   email: 'abhiramnellyadi018@gmail.com',
   phone: '+91 XXXXX XXXXX',
